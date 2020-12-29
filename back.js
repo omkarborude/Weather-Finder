@@ -8,11 +8,11 @@ var key = "7ca996688e35662b1ca3d68de68242fb";
 
 
 function constructUrl(city) {
-    return serverUrl + city + "&appid=" + key + "&units=metric";
-  }
+    return URL + city + "&units=metric&appid=" + key;
+}
 
 
-button.addEventListener("click", () => {
+button.addEventListener('click', () => {
 
     var city = getin.value;
 
@@ -30,5 +30,5 @@ button.addEventListener("click", () => {
         <ul/>
         `
     });
-})''
+});
 
