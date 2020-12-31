@@ -10,7 +10,7 @@ var iconsm = document.getElementById('iconsm');
 var time = document.getElementById('time');
 var date = document.getElementById('date');
 
-
+let errorcod;
 var condition;
 
 var URL = "https://api.openweathermap.org/data/2.5/weather?q=";
@@ -46,7 +46,17 @@ button.addEventListener('click', () => {
         
         condition = data.weather[0].id;
         
-    });
+        errorcod = data.cod;
+        
+    }).catch(function errorHandler(error) {
+            console.log(statusCod);
+            if (statusCod === "404") {
+                alert('You Have To Enter Name of City !!');
+            } else {
+                console.log(error);
+                alert('Please Enter a Valid City Name');
+            }
+        });
     
     if (condition < 300) {
         icon.innerHTML = '<img id="icon" src="image/thunder.svg" alt="Thuderstrom">';
