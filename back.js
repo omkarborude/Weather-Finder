@@ -50,7 +50,7 @@ button.addEventListener('click', () => {
         
     }).catch(function errorHandler(error) {
             console.log(statusCod);
-            if (statusCod === "404") {
+            if (errorcod === "404") {
                 alert('You Have To Enter Name of City !!');
             } else {
                 console.log(error);
