@@ -3,19 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
     <link rel="stylesheet" href="style.css">
-    <title>Weather WebApp</title>
+    <title>Weather Finder</title>
 </head>
 <body>
 
     <div class="main">
-        <h1>Weather WebApp</h1>
+      
+       <div class="nav">
+      </div> 
+      <h1><span  class="hheadh">Weather </span>
+       <span class="bgani"> Finder</span></h1>
+        
+        <div class="getin">
+        <input type="text" id="cityinput" placeholder="Enter Your City Name !!">
 
-        <input type="text" id="cityinput" placeholder="Enter City">
+        <button value="submit" type="submit" id="BTN">Check  <i class="fas fa-share"></i></button>
+        
+        </div>
 
-        <button value="submit" type="submit" id="BTN">click</button>
-
+       
+<!--       showing output  -->
         <div id="Showoutput">
+           
+           <div class="citystyle">
+              <div id="icon" class="iconbig"></div>
+               <h1 id="cityname"></h1>
+               <h3 id="date"></h3>
+               
+           </div>
+           
+           <div class="tempstyle">
+              <img src="image/85ab8753-dac8-4cd9-baa5-407ef653c7a2.svg" alt="" style="width: 35%">
+               <h2 id="showtemp"></h2>
+               <h3 id="time"></h3>
+               
+           </div>
+           
+           
+           <div class="descstyle">
+              <div id="iconsm" style="width: 80%;"></div>
+               <h2 id="showdesc"></h2>
+           </div>
+           
+           
             
             
         </div>
@@ -25,8 +58,17 @@
 
 
 
+
+
+
 <script src="https://cdn.jsdelivr.net/npm/bubbly-bg@1.0.0/dist/bubbly-bg.js"></script>
-  <script>bubbly();</script>
+  <script>bubbly({
+      colorStart: '#fff4e6',
+      colorStop: '#ffe9e4',
+      blur:1,
+      compose: 'source-over',
+      bubbleFunc:() => `hsla(${Math.random() * 50}, 100%, 50%, .3)`
+    });</script>
     
     <script src="back.js"></script>
 </body>
