@@ -13,7 +13,7 @@ var date = document.getElementById('date');
 
 var condition;
 
-var URL = "http://api.openweathermap.org/data/2.5/weather?q=";
+var URL = "https://api.openweathermap.org/data/2.5/weather?q=";
 
 var key = "7ca996688e35662b1ca3d68de68242fb";
 
