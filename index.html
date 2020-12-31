@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
     <link rel="stylesheet" href="style.css">
@@ -28,31 +29,44 @@
 <!--       showing output  -->
         <div id="Showoutput">
            
-           <div class="citystyle">
+           <div class="citystyle" data-aos="zoom-out-up" data-aos-duration="1000">
               <div id="icon" class="iconbig"></div>
                <h1 id="cityname"></h1>
                <h3 id="date"></h3>
                
            </div>
            
-           <div class="tempstyle">
-              <img src="image/85ab8753-dac8-4cd9-baa5-407ef653c7a2.svg" alt="" style="width: 35%">
+           <div class="tempstyle" data-aos="fade-up-right" data-aos-duration="1600">
+              <img src="image/85ab8753-dac8-4cd9-baa5-407ef653c7a2.svg" alt="" style="width: 35%"
+              data-aos="fade-down" data-aos-duration="1700">
                <h2 id="showtemp"></h2>
                <h3 id="time"></h3>
                
            </div>
            
            
-           <div class="descstyle">
+           <div class="descstyle" data-aos="fade-up-left" data-aos-duration="1800">
               <div id="iconsm" style="width: 80%;"></div>
                <h2 id="showdesc"></h2>
            </div>
            
            
-            
-            
         </div>
         
+<!--        Footter  -->
+       <div class="footer" id="contact">
+                   <h2>LET'S CONNECT.</h2>
+                   <div class="footerlinks">
+                   
+                   <a href="https://www.instagram.com/omkar.pro/"><i class="fab fa-instagram"></i> Instagram</a>
+                   
+                   <a href="https://www.linkedin.com/in/omkar-borude-%F0%9F%87%AE%F0%9F%87%B3-b4583016b/"><i class="fab fa-linkedin-in"></i> LinkedIn </a>
+                   
+                   <a href="https://github.com/omkarborude"><i class="fab fa-github"></i> GitHub</a>
+                   
+                   <a href="https://twitter.com/omkar_Borude_"><i class="fab fa-twitter"></i> Twitter</a>
+               </div>
+          </div>
         
     </div>
 
@@ -70,6 +84,8 @@
       bubbleFunc:() => `hsla(${Math.random() * 50}, 100%, 50%, .3)`
     });</script>
     
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
     <script src="back.js"></script>
 </body>
 </html>
