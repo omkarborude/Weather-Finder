@@ -116,6 +116,9 @@ h1{
     background-color: #42378f;
 background-image: linear-gradient(315deg, #42378f 0%, #f53844 74%);
 }
+#tempicon{
+    width: 35%;
+}
 #showtemp{
     color: yellow;
 }
@@ -124,9 +127,7 @@ background-image: linear-gradient(315deg, #42378f 0%, #f53844 74%);
     color: white;
     font-size: 16px;
 }
-.fa-temperature-high{
-    font-size: 40px;
-}
+
 
 
 .descstyle{
@@ -187,8 +188,147 @@ background-image: linear-gradient(315deg, #f9484a 0%, #fbd72b 74%);
 }
 
 
+ /* Responsive */
+@media screen and (max-width: 700px){
+    
+    .main{
+        width: 100%;
+    }
+    .nav{
+        height: 50px;
+        margin-top: -10px;
+    }
+    h1{
+        line-height: .75;
+	    margin-top: -40px;
+}
+   .hheadh{
+        color: rgb(14, 209, 89);
+	    font-size: 30px;
+    }
+    .getin{
+        margin-bottom: 80px;
+}
+     #cityinput{
+         width: 210px;
+         height: 30px;
+         padding: 10px;
+         margin-top: 10px;
+} 
 
+/* Button */
+#BTN{
+  margin: auto;
+  padding: 10px;
+  height: 40px;
+  width: 110px;
+  margin-top: 10px;
+  
+}
+/*    citystyke*/
+    .citystyle{
+    margin: auto;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 10px;
+    margin-left: 50px;
+    
+}
+    #icon{
+    margin-top: -20px;
+    margin-left: 10px;
+    width: 150px;
+    height: 150px;
+}
+#cityname{
+    font-size: 30px;
+    color: orangered;
+}
+#date{
+    color: white;
+}
+/*    temp*/
+    .tempstyle{
+    margin: auto;
+    margin-top: -290px;
+    margin-left: 5px;
+    width: 90px;
+    height: 90px;
+    
+}
+#tempicon{
+    width: 35%;
+}
+#showtemp{
+    font-size: 18px;
+    color: yellow;
+}
 
+#time{
+    color: white;
+    font-size: 12px;
+}
+/*    descstyle*/
+    .descstyle{
+    margin: auto;
+    margin-top: 80px;
+    margin-right: 15px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 20px;
+    background-color: #f9484a;
+background-image: linear-gradient(315deg, #f9484a 0%, #fbd72b 74%);
+    
+}
+
+#iconsm{
+    margin-top: -40px;
+    margin-left: -30px;
+    width: 80px;
+    height: 80px;
+}
+#showdesc{
+    color: black;
+    padding: 5px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/*    fotter*/
+    .footer{
+    border-radius: 10px;
+    opacity: 0.8;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    margin-top: 20px;
+   
+}
+
+.footerlinks a{
+    color: black;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.footerlinks a:hover{
+    color: white;
+    background-color: blue;
+}
+.footerlinks .mainlink{
+    color: red;
+}
+
+    
+    
+}
 
 
 
